@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Kontak - Website Perusahaan Servisin </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <style>
+            input, select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px;
+                box-sizing: border-box;
+            }
+
+            input[type=submit] {
+                width: 100%;
+                background-color: #029205;
+                border: none;
+                color: white;
+                padding: 12px 28px;
+                text-decoration: none;
+                font-size: 16px;
+                margin: 8px;
+                cursor: pointer;
+            }
+
+            .kontak {
+                margin-top: 60px;
+            }
+            .kontak-content {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr; 
+                gap: 30px; /* Jarak antara kolom */
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header> <h1>Selamat Datang di Website Perusahaan Servisin</h1> </header>
+
+        <main>
+            <!-- Navbar -->
+            <ul id="navbar_ul">
+                <li id="navbar_li"><a class="active" href="index.html">Halaman Utama</a></li>
+                <li id="navbar_li"><a class="active" href="about.html">Tentang Kami</a></li>
+                <li id="navbar_li"><a class="active" href="services.html">Layanan Perushaan</a></li>
+                <li id="navbar_li"><a class="active" href="kontak.html">Kontak</a></li>
+            </ul>
+
+
+            <h1 id="judul">Kontak Perusahaan</h1> <hr> <br>
+
+            <div class="container">
+                <h2 style="text-align: center;">Anda dapat menghubungi di formulir dibawah ini</h2> <hr>
+                <form>
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama">
+
+                    <label for="jkel">Mengambil Layanan</label>
+                    <select id="jns_layanan" name="jns_layanan">
+                        <option value="Konsultan_IT">Jasa Konsultan IT</option>
+                        <option value="Jasa_Pembuatan_Website">Jasa Pembuatan Website</option>
+                        <option value="Jasa_Desain_Aplikasi">Jasa Jasa Desain Aplikasi</option>
+                    </select>
+
+                    <label for="perusahaan">Nama Perusahaan Anda</label>
+                    <input type="text" id="perusahaan" name="perusahaan">
+
+                    <label for="telepon">Nomor Telepon Anda</label>
+                    <input type="number" id="telepon" name="telepon">
+
+                    <label for="keterangan">Keterangan Tambahan</label>
+                    <input type="text" id="keterangan" name="keterangan">
+
+                    <input type="submit" value="Submit">
+                </form>
+
+                <div class="kontak">
+                    <h1><center>Kontak Perusahaan</center></h1>
+                    <hr>
+                    <div class="kontak-content">
+                        <h2>Email : stanleyg@gmail.com</h2>
+                        <h2>Instagram : @stan98xx_</h2>
+                        <h2>WA : 08989732117</h2>
+                    </div>
+                </div>
+            </div>
+            
+        </main> 
+
+        <footer> 
+            <p>&copy; 2024 Website Servisin</p> 
+        </footer>
+    </body>
+</html>
